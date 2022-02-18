@@ -11,7 +11,7 @@ jobs:
         with:
           owner: ${{ github.repository_owner }}
           repo: npm-publish-many-versions
-          package-name: npm-publish-many-versions
+          package-name: npm-load
           token: ${{ secrets.DELETE_PACKAGES_TOKEN }}
           num-old-versions-to-delete: 100
           # min-versions-to-keep: 50

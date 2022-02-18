@@ -12,6 +12,6 @@ jobs:
           owner: ${{ github.repository_owner }}
           repo: npm-publish-many-versions
           package-name: npm-publish-many-versions
-          token: ${{ secrets.GITHUB_PAT }}
+          token: ${{ secrets.DELETE_PACKAGES_TOKEN }}
           min-versions-to-keep: 50
           delete-only-pre-release-versions: false

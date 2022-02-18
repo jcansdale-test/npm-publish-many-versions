@@ -1,0 +1,17 @@
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/delete-package-versions@v2
+        with:
+          owner: ${{ github.repository_owner }}
+          repo: npm-publish-many-versions
+          package-name: npm-publish-many-versions
+          token: ${{ secrets.GITHUB_PAT }}
+          min-versions-to-keep: 50
+          delete-only-pre-release-versions: false

@@ -10,7 +10,7 @@ jobs:
       - uses: actions/delete-package-versions@v2
         with:
           owner: ${{ github.repository_owner }}
-          repo: npm-publish-many-versions
+          repo: npm-load
           package-name: npm-load
           token: ${{ secrets.DELETE_PACKAGES_TOKEN }}
           num-old-versions-to-delete: 100

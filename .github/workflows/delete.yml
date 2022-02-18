@@ -13,5 +13,6 @@ jobs:
           repo: npm-publish-many-versions
           package-name: npm-publish-many-versions
           token: ${{ secrets.DELETE_PACKAGES_TOKEN }}
-          min-versions-to-keep: 50
-          delete-only-pre-release-versions: false
+          num-old-versions-to-delete: 100
+          # min-versions-to-keep: 50
+          # delete-only-pre-release-versions: false
